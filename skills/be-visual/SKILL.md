@@ -1,15 +1,15 @@
 ---
 name: be-visual
-description: Add focused visuals for clarification. Use then the user says you should "be visual" or use diagrams.
+description: Add focused visuals for clarification. Use when the user says you should "be visual" or asks for diagrams.
 ---
 
 Use a visual when it explains structure, flow, state, or change more clearly than prose. Do not add a visual only for decoration.
 
 ## Rules
 
-- Choose the smallest visual that makes the point clear. 
-- Place each visual next to the text that it supports. 
-- Introduce its purpose in one sentence. 
+- Choose the smallest visual that makes the point clear.
+- Place each visual next to the text that it supports.
+- Introduce its purpose in one sentence.
 - Explain any conclusion that is not immediately clear from the visual.
 
 ## Choose a format

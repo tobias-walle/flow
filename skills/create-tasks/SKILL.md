@@ -5,18 +5,18 @@ description: Create a list of tasks from a design doc or change description. Onl
 
 Split a planned change into vertical slices (tasks) that can be implemented independently.
 
-1. Understand the intent by either reading the attached documents, or analysing the user request.
-2. Gather all relevant context by reading relevant files and rules in the codebase. Do not use subagents if not otherwise specified to fully understand the relevant context.
+1. Understand the intent by either reading the attached documents or analyzing the user request.
+2. Gather all relevant context by reading relevant files and rules in the codebase. Do not use subagents unless otherwise specified. Fully understand the relevant context.
 3. Plan what changes are necessary to fully integrate the given change request, honoring all the described restrictions and rules of the codebase.
-4. If there are important details not specified yet (like file structure and core interfaces). Propose a design and present it to the user. Be visual. Once he confirms save it either in a referenced existing design document or create a new one using `/create-design`.
-4. Split the work into vertical slices (tasks).
+4. If important details are not specified yet, such as file structure and core interfaces, propose a design and present it to the user. Be visual. Once they confirm, save it in a referenced existing design document or create a new one using `/create-design`.
+5. Split the work into vertical slices (tasks).
    - Each task is an independently verifiable, vertical slice.
    - Tasks may depend on other tasks and might be parallelizable.
    - Dependencies represent actual blockers, not a preferred execution order.
    - Tasks are split by scope, not time. There might be only one task required for a given change.
-5. Give a concise overview of the task split by listing each task number & title. Ask the user for confirmation of this split if it involves meaningful trade-offs.
-6. If the user gives feedback, ask follow up questions if necessary, integrate it, present the results and repeat until the user confirms.
-7. Once the user confirms store the tasks in the given format:
+6. Give a concise overview of the task split by listing each task number and title. Ask the user for confirmation of this split if it involves meaningful trade-offs.
+7. If the user gives feedback, ask follow-up questions if necessary, integrate it, present the results, and repeat until the user confirms.
+8. Once the user confirms, store the tasks in the given format:
 
 File Location: `.agents/changes/YYYY-MM-DD-<slug>/tasks/`
 
@@ -55,4 +55,4 @@ dependencies:
 * [ ] Existing new-session behavior remains unchanged
 * [ ] Relevant repository tests and checks pass
 * [ ] <Describe an observable, falsifiable outcome that proves the task works. Prefer behavior over implementation details.>
-````
+```

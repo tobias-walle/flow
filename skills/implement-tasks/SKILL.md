@@ -1,6 +1,6 @@
 ---
 name: implement-tasks
-description: Implement the given .agents/changes/<change>/tasks. Only use if a concrete .agents/change or task is specified. Do not use for generic implementation tasks.
+description: Implement the given .agents/changes/<change>/tasks. Only use if a concrete .agents/changes path or task is specified. Do not use for generic implementation tasks.
 ---
 
 Implement a change or focused task.
@@ -20,7 +20,7 @@ Implement a change or focused task.
 
 1. Understand the task and its scope
 2. Read the referenced documents and key files
-3. Mark next work items with `[-]`
+3. Mark the next work items with `[-]`
 4. Focus on speed. Do all the relevant edits in as few turns as possible, including the tests. Do not use TDD if not explicitly requested.
 5. Mark completed work items with `[x]`
 6. Run relevant checks and tests and fix issues directly.
@@ -50,9 +50,9 @@ Use this mode only when the user explicitly requests subagents.
 
 Use this mode only when the user explicitly requests parallel subagents.
 
-Follow `Sequential Subagents`, but use worktrees to isolate independent tasks. 
+Follow `Sequential Subagents`, but use worktrees to isolate independent tasks.
 
-Process only tasks whose dependencies are complete. 
+Process only tasks whose dependencies are complete.
 
 Merge completed worktrees into the current branch one at a time. Resolve integration issues directly.
 
