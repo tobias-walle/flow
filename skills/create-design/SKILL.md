@@ -3,7 +3,9 @@ name: create-design
 description: Create a design document from a brainstorming session or another discussion. Use when important decisions must persist in a visual document for humans.
 ---
 
-Create a concise design document at `.agents/changes/YYYY-MM-DD-<slug>/design.md`. Use the current date in the directory name.
+Create a concise `design.md` in the change folder. Follow the `changes-folder` skill for folder conventions.
+
+Only update an existing design if explicitly mentioned. Do not search for matching design proactively.
 
 Start the document with lightweight YAML frontmatter:
 

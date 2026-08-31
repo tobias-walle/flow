@@ -16,9 +16,7 @@ Split a planned change into vertical slices (tasks) that can be implemented inde
    - Tasks are split by scope, not time. There might be only one task required for a given change.
 6. Give a concise overview of the task split by listing each task number and title. Ask the user for confirmation of this split if it involves meaningful trade-offs.
 7. If the user gives feedback, ask follow-up questions if necessary, integrate it, present the results, and repeat until the user confirms.
-8. Once the user confirms, store the tasks in the given format:
-
-File Location: `.agents/changes/YYYY-MM-DD-<slug>/tasks/`
+8. Once the user confirms, store the tasks in the change folder's `tasks/` directory. Follow the `changes-folder` skill for folder conventions.
 
 Each task is a file `<id>-<slug>.md`, e.g. `01-add-login-page.md`.
 

@@ -3,7 +3,7 @@ name: implement-tasks
 description: Implement the given .agents/changes/<change>/tasks. Only use if a concrete .agents/changes path or task is specified. Do not use for generic implementation tasks.
 ---
 
-Implement a change or focused task.
+Implement a change or focused task. Follow the `changes-folder` skill for folder conventions.
 
 1. Determine the scope:
    * If the user gave you a full change, the scope is all tasks of this change
