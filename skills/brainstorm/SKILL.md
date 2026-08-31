@@ -26,8 +26,8 @@ The goal is to reach a common understanding and alignment.
 ## Q&A Behavior
 
 - As long as the general direction is unclear, ask one question at a time
-- After the first few questions, once the solution falls into place and you expect the user to accept the recommended answers, ask multiple questions at once
-- Batches should be grouped by question dependencies. Do not ask questions that depend on each other in the same batch.
+- Once the general direction is clear, stop asking individual questions. Present all remaining questions with the recommended answer and rejected alternatives together, with brief reasoning. Ask the user only to correct recommendations they disagree with.
+- Use questions to establish direction. Use recommendations to complete details.
 
 ## Scope
 
