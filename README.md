@@ -17,7 +17,17 @@ Enough talking, the main workflow is:
 3. `/create-tasks`: Split work across multiple tasks that can be implemented in multiple sessions.
 4. `/implement-tasks`: Implement the tasks created in the previous step, either in one or more sessions or by using subagents with or without worktrees. You could also build a Ralph loop around it. Your choice!
 
-In addition, `/be-visual` adds focused diagrams, while `/changes-folder` defines the shared conventions for change artifacts.
+Two helper skills support this workflow. `/be-visual` adds diagrams. `/changes-folder` keeps each change's context together across phases:
+
+```text
+.agents/changes/
+└── 2026-12-31-42-oauth-support/  # Issue reference is optional
+    ├── design.md                  # Decisions and context
+    ├── tasks/                     # Implementation tasks
+    └── prototype/                 # Optional supporting artifacts
+```
+
+Other task-specific files and folders can be added freely.
 
 Let's walk through an example:
 1. `/brainstorm Let's brainstorm how we can add auth to my app. I already know I want to support OAuth2 and login via Google.`
